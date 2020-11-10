@@ -4,7 +4,7 @@
  a img { border: 0; }
  a { text-decoration: none; }
  body { font-family: 'Open Sans', sans-serif; font-size: 13px;}
- .container { margin: 0 auto; width: 900px; }
+ .container { margin: 0 auto; width: 960px; }
  #header-wrap, #banner-wrap, #nav-wrap, #main-wrap, #footer-wrap { width:100%; }
  a { color: #359bdc; }
  a:hover { color: #77c7fa; }
