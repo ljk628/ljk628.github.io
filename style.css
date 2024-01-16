@@ -8,7 +8,10 @@
  #header-wrap, #banner-wrap, #nav-wrap, #main-wrap, #footer-wrap { width:100%; }
  a { color: #359bdc; }
  a:hover { color: #77c7fa; }
- h2 { font-size: 20px; padding: 1.0em 0em 0em 0; line-height: normal; font-family: 'Open Sans', sans-serif; font-weight: 400; color: #333; }
+ /* h2 { font-size: 20px; padding: 1.0em 0em 0em 0; line-height: normal;
+   font-family: 'Open Sans', sans-serif; font-weight: 400; color: #333; } */
+h2 { font-size: 20px; padding: 1.0em 0em 0em 0; line-height: normal;
+     font-family: 'Garamond', sans-serif; font-weight: 400; color: #333; }
  div.paragraph { line-height: 1.5; padding: 0.5em 0; }
  p { line-height: 1.5; padding: 1em 0; }
  #main-wrap { background:#fff; padding:20px 0; }
