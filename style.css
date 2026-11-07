@@ -4,14 +4,14 @@
  a img { border: 0; }
  a { text-decoration: none; }
  body, td, th, tr, p, a, li {
-   font-family: 'Palatino', sans-serif;
+   font-family: 'Palatino', 'Garamond', 'Baskerville', serif;
  }
  .container { margin: 0 auto; width: 960px; }
  #header-wrap, #banner-wrap, #nav-wrap, #main-wrap, #footer-wrap { width:100%; }
  a { color: #359bdc; }
  a:hover { color: #77c7fa; }
 h2 { font-size: 20px; padding: 1.0em 0em 0em 0; line-height: normal;
-     font-family: 'Palatino', sans-serif;
+     font-family: 'Palatino', 'Garamond', 'Baskerville', serif;
      font-weight: 400; color: #333; }
  div.paragraph { line-height: 1.5; padding: 0.5em 0; }
  p { line-height: 1.5; padding: 1em 0; }
@@ -21,3 +21,22 @@ h2 { font-size: 20px; padding: 1.0em 0em 0em 0; line-height: normal;
 
 div.paragraph ul, div.paragraph ol { padding-left: 3em !important; margin: 5px 0 !important; overflow:hidden; }
 div.paragraph li { padding-left: 5px !important; margin: 3px 0 0 !important; }
+
+/* Keep the desktop layout and let the homepage adapt to narrower screens. */
+.homepage .container { width: min(960px, calc(100% - 40px)); }
+.homepage a { color: #176397; }
+.homepage a:hover { color: #104b74; text-decoration: underline; }
+.homepage a:focus-visible { outline: 2px solid #176397; outline-offset: 3px; }
+.homepage h2 { font-weight: 600; }
+
+@media (max-width: 640px) {
+  .homepage .profile-photo { float: none !important; }
+  .homepage .research-table,
+  .homepage .research-table tbody,
+  .homepage .research-table tr,
+  .homepage .research-table td { display: block; height: auto; }
+  .homepage .research-table tr:not(:empty) { margin-bottom: 1.5em; }
+  .homepage .research-table img { max-width: 100%; height: auto; margin: 0 0 0.5em !important; }
+  .homepage div.paragraph ul,
+  .homepage div.paragraph ol { padding-left: 1.4em !important; }
+}
